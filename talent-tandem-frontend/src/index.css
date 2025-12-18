@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-500 {
+    animation-delay: 0.5s;
+  }
+}
+
+/* Global Cursor Styles */
+* {
+  cursor: auto;
+}
+
+button,
+a,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+select,
+label,
+.clickable {
+  cursor: pointer !important;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+input[type="date"],
+input[type="time"],
+textarea {
+  cursor: text !important;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer !important;
+}
+
+input:disabled,
+button:disabled,
+select:disabled,
+textarea:disabled {
+  cursor: not-allowed !important;
+}

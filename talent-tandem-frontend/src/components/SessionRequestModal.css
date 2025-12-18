@@ -1,0 +1,146 @@
+.session-request-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.session-request-modal {
+  background: white;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.request-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.request-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1f2937;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #9ca3af;
+  line-height: 1;
+}
+
+.request-body {
+  padding: 1.5rem;
+}
+
+.learner-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.learner-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.learner-info h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #1f2937;
+}
+
+.skill-name {
+  margin: 0.25rem 0 0 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.session-details {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-row .label {
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.detail-row .value {
+  color: #1f2937;
+  text-align: right;
+  max-width: 60%;
+}
+
+.request-actions {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.btn-decline, .btn-accept {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-decline {
+  background: #fee;
+  color: #dc2626;
+}
+
+.btn-decline:hover {
+  background: #fca5a5;
+}
+
+.btn-accept {
+  background: #10b981;
+  color: white;
+}
+
+.btn-accept:hover {
+  background: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}

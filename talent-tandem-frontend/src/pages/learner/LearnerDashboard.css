@@ -1,0 +1,328 @@
+/* Learner Dashboard - Home Page Theme (Purple/Pink) */
+
+.learner-dashboard.admin-dashboard {
+  background: linear-gradient(135deg, #f5f3ff 0%, #fae8ff 50%, #fce7f3 100%);
+}
+
+/* Sidebar - Purple/Pink Theme */
+.learner-dashboard .sidebar {
+  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 4px 0 20px rgba(102, 126, 234, 0.3);
+}
+
+.learner-dashboard .collapse-btn {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.learner-dashboard .collapse-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.learner-dashboard .nav-item.active {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.learner-dashboard .logout-btn {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.learner-dashboard .logout-btn:hover {
+  background: rgba(239, 68, 68, 0.25);
+}
+
+/* Top Bar */
+.learner-dashboard .top-bar {
+  border-bottom: 2px solid rgba(124, 58, 237, 0.1);
+}
+
+.learner-dashboard .page-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.learner-dashboard .icon-btn:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.learner-dashboard .user-profile:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Profile Dropdown */
+.learner-dashboard .profile-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.learner-dashboard .profile-menu-item:hover {
+  color: #667eea;
+}
+
+/* Stats Cards */
+.learner-dashboard .stat-card::before {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+}
+
+.learner-dashboard .stat-card:hover {
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.2);
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+.learner-dashboard .stat-value {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Chart Cards */
+.learner-dashboard .chart-card h3 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Activity Items */
+.learner-dashboard .activity-item:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.learner-dashboard .activity-icon {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+/* Mentor Items */
+.learner-dashboard .mentor-item:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.learner-dashboard .mentor-rank {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Action Button */
+.learner-dashboard .action-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.learner-dashboard .action-btn:hover {
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Notification Badge */
+.learner-dashboard .notification-badge {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+/* Placeholder Section */
+.learner-dashboard .placeholder-section h2 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* My Skills Section - Modern Design */
+.learner-dashboard .skills-container {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.learner-dashboard .skills-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0 0.5rem;
+}
+
+.learner-dashboard .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.learner-dashboard .skill-card-modern {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 2px solid #f3f4f6;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.learner-dashboard .skill-card-modern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+.learner-dashboard .skill-card-modern:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(102, 126, 234, 0.15);
+  border-color: #667eea;
+}
+
+.learner-dashboard .skill-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.learner-dashboard .skill-name-modern {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.learner-dashboard .skill-badges {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.learner-dashboard .skill-badge {
+  padding: 0.375rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.learner-dashboard .badge-beginner {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.learner-dashboard .badge-intermediate {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.learner-dashboard .badge-advance {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.learner-dashboard .skill-info-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.learner-dashboard .skill-info-icon {
+  color: #667eea;
+  font-size: 1rem;
+}
+
+.learner-dashboard .skill-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.learner-dashboard .skill-action-btn {
+  flex: 1;
+  padding: 0.625rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.learner-dashboard .btn-edit {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.learner-dashboard .btn-edit:hover {
+  background: #ddd6fe;
+  transform: translateY(-1px);
+}
+
+.learner-dashboard .btn-delete {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.learner-dashboard .btn-delete:hover {
+  background: #fecaca;
+  transform: translateY(-1px);
+}
+
+.learner-dashboard .add-skill-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.learner-dashboard .add-skill-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.learner-dashboard .empty-skills {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 16px;
+  border: 2px dashed #e5e7eb;
+}
+
+.learner-dashboard .empty-skills-icon {
+  font-size: 4rem;
+  color: #d1d5db;
+  margin-bottom: 1rem;
+}
+
+.learner-dashboard .empty-skills h3 {
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.learner-dashboard .empty-skills p {
+  color: #9ca3af;
+  margin-bottom: 1.5rem;
+}

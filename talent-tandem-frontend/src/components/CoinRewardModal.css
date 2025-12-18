@@ -1,0 +1,105 @@
+.coin-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.coin-modal-content {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 24px;
+  padding: 3rem 2rem;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.coin-modal-content::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(180deg); }
+}
+
+.coin-icon {
+  font-size: 2rem;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+.coin-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.coin-message {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1rem;
+}
+
+.coin-amount {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffd700;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+  margin: 0rem 0;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.coin-subtitle {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  padding: 0 1rem;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.coin-close-btn {
+  background: white;
+  color: #667eea;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.coin-close-btn:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.floating-coin {
+  pointer-events: none;
+}

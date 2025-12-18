@@ -1,0 +1,64 @@
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  color: #667eea;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.back-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  transition: left 0.3s ease;
+  z-index: 0;
+}
+
+.back-button:hover::before {
+  left: 0;
+}
+
+.back-button svg,
+.back-button span {
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  transform: translateX(-5px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+  border-color: #667eea;
+}
+
+.back-button:hover svg,
+.back-button:hover span {
+  color: white;
+  stroke: white;
+}
+
+.back-button:active {
+  transform: translateX(-3px) scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .back-button {
+    padding: 0.625rem 1rem;
+    font-size: 0.875rem;
+  }
+}

@@ -1,0 +1,73 @@
+/* Mentor Dashboard - Home Page Theme (Purple/Pink) */
+
+.mentor-dashboard.admin-dashboard {
+  background: linear-gradient(135deg, #f5f3ff 0%, #fae8ff 50%, #fce7f3 100%);
+}
+
+/* Sidebar - Purple/Pink Theme */
+.mentor-dashboard .sidebar {
+  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 4px 0 20px rgba(102, 126, 234, 0.3);
+}
+
+.mentor-dashboard .top-bar {
+  border-bottom: 2px solid rgba(102, 126, 234, 0.1);
+}
+
+.mentor-dashboard .page-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.mentor-dashboard .icon-btn:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.mentor-dashboard .user-profile:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.mentor-dashboard .profile-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.mentor-dashboard .profile-menu-item:hover {
+  color: #667eea;
+}
+
+.mentor-dashboard .stat-card::before {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+}
+
+.mentor-dashboard .stat-card:hover {
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.2);
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+.mentor-dashboard .stat-value {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.mentor-dashboard .chart-card h3 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.mentor-dashboard .action-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.mentor-dashboard .action-btn:hover {
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}

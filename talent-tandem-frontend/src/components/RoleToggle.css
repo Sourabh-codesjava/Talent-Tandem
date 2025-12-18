@@ -1,0 +1,110 @@
+.role-toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+}
+
+.role-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.role-label.active {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.toggle-switch {
+  position: relative;
+  width: 60px;
+  height: 32px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.toggle-switch.mentor {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  box-shadow: 0 4px 12px rgba(240, 147, 251, 0.3);
+}
+
+.toggle-switch:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+}
+
+.toggle-switch.mentor:hover {
+  box-shadow: 0 6px 16px rgba(240, 147, 251, 0.4);
+}
+
+.toggle-switch.toggling {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.toggle-slider {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-switch.mentor .toggle-slider {
+  transform: translateX(28px);
+}
+
+.toggle-icon {
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+
+.toggle-switch:active .toggle-slider {
+  width: 32px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .role-toggle-container {
+    gap: 0.5rem;
+    padding: 0.4rem 0.75rem;
+  }
+
+  .role-label {
+    font-size: 0.75rem;
+  }
+
+  .toggle-switch {
+    width: 50px;
+    height: 28px;
+  }
+
+  .toggle-slider {
+    width: 22px;
+    height: 22px;
+  }
+
+  .toggle-switch.mentor .toggle-slider {
+    transform: translateX(22px);
+  }
+
+  .toggle-icon {
+    font-size: 0.75rem;
+  }
+}
