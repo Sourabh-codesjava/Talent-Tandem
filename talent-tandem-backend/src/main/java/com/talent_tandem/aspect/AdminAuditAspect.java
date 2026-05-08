@@ -2,6 +2,7 @@ package com.talent_tandem.aspect;
 
 import com.talent_tandem.model.AdminAuditLog;
 import com.talent_tandem.repository.IAdminAuditLogRepository;
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
@@ -9,6 +10,8 @@ import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -18,12 +21,14 @@ import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-@Slf4j
 @Aspect
 @Component
 @RequiredArgsConstructor
 public class AdminAuditAspect {
 
+
+    private static final Logger log =
+            LoggerFactory.getLogger(AdminAuditAspect.class);
     private final IAdminAuditLogRepository auditLogRepository;
 
     @Before("execution(* com.talent_tandem.controller.AdminController.*(..))")

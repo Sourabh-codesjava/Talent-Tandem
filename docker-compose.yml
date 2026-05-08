@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  talent-tandem-backend:
+    image: sourabh747/backend:1
+    container_name: backend
+    env_file:
+      - .env
+    expose:
+      - "8080"
+    restart: always
+
+  talent-tandem-frontend:
+    image: sourabh747/frontend:1
+    container_name: frontend
+    expose:
+      - "3000"
+    restart: always
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - talent-tandem-backend
+      - talent-tandem-frontend
+    restart: always
