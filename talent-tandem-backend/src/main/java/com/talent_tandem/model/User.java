@@ -1,6 +1,7 @@
 package com.talent_tandem.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.talent_tandem.enums.Role;
+import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -69,6 +70,7 @@ public class User {
     private String phoneNumber;
 
     @Enumerated(EnumType.STRING)
+    @Nullable
     @Column(name = "role")
     private Role role;
 
